@@ -38,7 +38,7 @@ def predict_datapoint():
         print("Mid Prediction")
         results=predict_pipeline.predict(pred_df)
         
-        if results[0]>=100:
+        if float(results[0])>=100.0:
             results[0]=100.0
             
         print("after Prediction")
